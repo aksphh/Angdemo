@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>
+    Http Client
+  </h1>
+
+  <table [formGroup]="postForm">
+    <tr>
+      <td>
+        <input type="text" formControlName="title" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" formControlName="description" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button (click)="create()">Create</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {{ msg }}
+      </td>
+    </tr>
+  </table>
+</div>
